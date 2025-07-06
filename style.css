@@ -1,0 +1,42 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes loading-anim {
+    0% { background-position: -800px 0; }
+    100% { background-position: 800px 0; }
+}
+
+.loading-bar-anim {
+    background: linear-gradient(to right, #DF1783, #e2e8f0, #DF1783);
+    background-size: 800px 100%;
+    animation: loading-anim 3s linear infinite;
+}
+
+.dark .loading-bar-anim {
+    background: linear-gradient(to right, #DF1783, #1f2937, #DF1783);
+    background-size: 800px 100%;
+    animation: loading-anim 3s linear infinite;
+}
+
+.markdown-content p { margin-bottom: 1rem; }
+.markdown-content ul, .markdown-content ol { margin-left: 1.5rem; margin-bottom: 1rem; list-style: revert; }
+.markdown-content h1, .markdown-content h2, .markdown-content h3 { font-weight: 600; margin-bottom: 0.5rem; margin-top: 1.5rem; }
+.markdown-content h1 { font-size: 1.875rem; }
+.markdown-content h2 { font-size: 1.5rem; }
+.markdown-content h3 { font-size: 1.25rem; }
+.markdown-content code {
+    background-color: #f1f1f1;
+    padding: 0.2em 0.4em;
+    font-size: 85%;
+    border-radius: 6px;
+    font-family: monospace;
+}
+.dark .markdown-content code { background-color: #374151; }
+.markdown-content pre { background-color: #f1f1f1; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin-bottom: 1rem; }
+.dark .markdown-content pre { background-color: #1f2937; }
+.markdown-content pre code { background-color: transparent; padding: 0; font-size: 100%; border-radius: 0; }
+.markdown-content a { color: #DF1783; text-decoration: underline; }
+.markdown-content blockquote { border-left: 4px solid #ccc; padding-left: 1rem; margin-left: 0; font-style: italic; color: #6b7280; }
+.dark .markdown-content blockquote { border-left-color: #4b5563; color: #9ca3af; }
